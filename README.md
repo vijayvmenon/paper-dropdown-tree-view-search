@@ -14,7 +14,7 @@ Steps to Run :
         
 4.  Change directory to your local repo and install dependencies with `bower`:
 
-        cd polymer-first-elements
+        cd tree-view-search
         
 5.  To preview your element, run `polymer serve` from the repo directory:
 
