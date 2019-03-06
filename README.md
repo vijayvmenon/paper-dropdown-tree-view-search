@@ -1,4 +1,4 @@
-Most of the code is inspired from https://github.com/Juravenator/paper-dropdown-input &  https://github.com/vpusher/paper-tree 
+Most of the code is inspired from https://github.com/Juravenator/paper-dropdown-input &  https://github.com/vpusher/paper-tree . 
 I have made some changes in the source code of above libraries for traversing the tree in the dropdown and also implemented a recursive custom filter function.
 
 Steps to Run : 
