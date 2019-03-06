@@ -10,7 +10,7 @@ Steps to Run :
 
 3.  Clone this repo:
 
-        https://github.com/googlecodelabs/polymer-first-elements.git
+       https://github.com/vijayvmenon/paper-dropdown-tree-view-search.git
         
 4.  Change directory to your local repo and install dependencies with `bower`:
 
@@ -20,6 +20,6 @@ Steps to Run :
 
         polymer serve
         
-    Open `localhost:8080/components/icon-toggle/demo/`  (check the port number from polymer serve command) in your browser. (Note that the path uses `icon-toggle` — the component name listed in this element's `bower.json` file—rather than the actual directory name.) 
+    Open `localhost:8080/components/icon-toggle/demo/`  (check the port number from polymer serve command) in your browser. (Note that the path uses `tree-view-search` — the component name listed in this element's `bower.json` file—rather than the actual directory name.) 
     
 
