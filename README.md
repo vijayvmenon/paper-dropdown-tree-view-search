@@ -1,20 +1,12 @@
-# Your first Polymer element
+Most of the code is inspired from https://github.com/Juravenator/paper-dropdown-input &  https://github.com/vpusher/paper-tree 
+I have made some changes in the source code of above libraries for traversing the tree in the dropdown and also implemented a recursive custom filter function.
 
-This repo goes with the [Build your first Polymer element codelab](http://www.code-labs.io/codelabs/polymer-first-elements/).
-
-The codelab is designed to be used with [Chrome Dev Editor](https://chrome.google.com/webstore/detail/chrome-dev-editor-develop/pnoffddplpippgcfjdhbmhkofpnaalpg?hl=en).
-See the next section if you'd like to use another editor for the codelab.
-
-## Running the codelab without Chrome Dev Editor
-
-If you're not using CDE, you'll need to install some command-line tools to manage
-dependencies and to run the demo.
-
+Steps to Run : 
 1.  Download and install Node from [https://nodejs.org/](https://nodejs.org/). Node includes the node package manager command, `npm`.
 
-2.  Install `bower` and `polyserve`:
+2.  Install `bower` and `polymer v1`:
 
-        npm install -g bower polyserve
+        npm install -g bower Polymer/polymer#^1.0.0
 
 3.  Clone this repo:
 
@@ -23,14 +15,11 @@ dependencies and to run the demo.
 4.  Change directory to your local repo and install dependencies with `bower`:
 
         cd polymer-first-elements
-        bower install
         
-5.  To preview your element, run `polyserve` from the repo directory:
+5.  To preview your element, run `polymer serve` from the repo directory:
 
-        polyserve
+        polymer serve
         
-    Open `localhost:8080/components/icon-toggle/demo/` in your browser. (Note that the path uses `icon-toggle`—the 
-    component name listed in this element's `bower.json` file—rather than the actual directory name.) 
+    Open `localhost:8080/components/icon-toggle/demo/`  (check the port number from polymer serve command) in your browser. (Note that the path uses `icon-toggle` — the component name listed in this element's `bower.json` file—rather than the actual directory name.) 
     
-If you're wondering what `polyserve` does, see [Testing elements with local bower dependencies](https://www.polymer-project.org/1.0/docs/start/reusableelements.html#local-dependencies) 
-in the Polymer docs. 
+
