@@ -1,0 +1,29 @@
+{
+  "name": "tree-view-search",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Polymer/element-tutorial",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "iron-icon": "PolymerElements/iron-icon#^1.0.0",
+    "iron-icons": "PolymerElements/iron-icons#^1.0.0",
+    "iron-dropdown": "1.0.0",
+    "iron-ajax": "PolymerElements/iron-ajax#1.0.0",
+    "vaadin-upload": "vaadin/vaadin-upload#1.1.4",
+    "paper-input": "@polymer/paper-input#1.0.0",
+    "paper-tree": "^1.0.3",
+    "paper-dropdown-input": "@polymer/paper-dropdown-input#2.4.1"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^0.7.18",
+    "iron-icon": "^1.0.0",
+    "iron-iconset-svg": "^1.0.0"
+  }
+}

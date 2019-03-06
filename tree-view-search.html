@@ -1,0 +1,113 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+<link rel="import" href="../paper-input/paper-input.html" >
+<link rel="import" href="../paper-menu/paper-menu.html">
+<link rel="import" href="../paper-dropdown-menu/paper-dropdown-menu.html" >
+<link rel="import" href="../paper-dropdown-input/paper-dropdown-input.html" >
+<link rel="import" href="../paper-tree/paper-tree.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+
+
+
+<dom-module id="tree-view-search">
+
+
+  <template>
+
+    <style>
+      :host {
+        /* display: inline-block; */
+        --decoration-style: {
+          text-decoration: underline
+        }
+      }
+    
+    #multisearch {
+      display:flex;
+      justify-content:center;
+    }
+  
+      .normal {
+        --custom-text-color: yellow
+      }
+
+      .danger {
+        --custom-text-color: red
+      }
+
+      .spanstyle {
+        --span-style: {
+          font-size: 40px;
+          color: orange;
+        }
+      }
+    </style>
+     <paper-dropdown-input id="multisearch" label="Your favorite movie" items='{{data.children}}' filter="{{filterfn}}" filter-property=name> 
+       <template>
+          <iron-ajax
+          auto
+          url="data1.json"
+          handle-as="json"
+          on-response="handleResponse"
+          last-response="{{data}}">
+      </iron-ajax>
+          <paper-tree data='[[_getMovies(items)]]' name="{{data.name}}" open="{{data.open}}" icon="{{data.icon}}" first="{{data.firstLevel}}"></paper-tree> 
+       </template>
+      </paper-dropdown-input> 
+  </template>
+
+  <script>
+    MyPractice = Polymer({
+      is: 'tree-view-search',
+      properties: {
+        data: {
+                type:Object,
+                notify:true,
+                value:{}
+          },
+          filterfn: {
+          type: Function,
+          //Custom recursive filter function
+          value: function() {
+            var filter =  (items, searchValue, filterProperty) => {
+               // console.log(items, searchValue, filterProperty);
+                 var matches = [];
+                  if (!Array.isArray(items)) return matches;
+
+                    items.forEach(function(i) {
+                        if (i.name.toUpperCase().includes(searchValue.toUpperCase())) {
+                       matches.push(i);
+                       } else {
+                          let childResults = filter(i.children, searchValue,filterProperty);
+                          if (childResults.length)
+                             matches.push(Object.assign({}, i, { children: childResults }));
+                             }
+                       })     
+                    return matches;
+
+                   }
+                   return filter;
+          }
+          }
+      },
+      _getMovies:function(items) {
+     //   console.log(items);
+         return items.filter(function (item) {
+           return true
+         });
+     },
+     _getMainItem : function(items) {
+             return items
+     },
+     _getName:function() {
+    return this.data.name
+   },
+      handleResponse: function(request) {
+        console.log(request.detail.response);
+         this.data = request.detail.response;
+      }
+    });
+
+  </script>
+
+</dom-module>

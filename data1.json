@@ -1,0 +1,169 @@
+{
+	"name": "Movies",
+	"open": true,
+	"icon": "folder",
+	"firstLevel": true,
+	"children": [{
+			"name": "Spy Films",
+			"children": [{
+					"name": "Spy Comedy",
+					"children": [{
+							"name": "Austin Powers"
+						},
+						{
+							"name": "Bad Company"
+						},
+						{
+							"name": "Red"
+						}
+					]
+				},
+				{
+					"name": "Spy Thrillers",
+					"children": [{
+							"name": "Salt"
+						},
+						{
+							"name": "Patriot Games"
+						},
+						{
+							"name": "The Specialist"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Action Films",
+			"children": [{
+					"name": "Superhero",
+					"children": [{
+							"name": "Avengers"
+						},
+						{
+							"name": "Thor"
+						},
+						{
+							"name": "Spiderman"
+						},
+						{
+							"name": "Batman"
+						}
+					]
+				},
+				{
+					"name": "Martial Arts",
+					"children": [{
+							"name": "Martial Arts Western",
+							"children": [{
+									"name": "Shangai Knight"
+								},
+								{
+									"name": "Shangai Noon"
+								},
+								{
+									"name": "Red Sun"
+								}
+							]
+						},
+						{
+							"name": "Kick Boxer"
+						},
+						{
+							"name": "Enter The Dragon"
+						},
+						{
+							"name": "Police Story"
+						}
+					]
+				},
+				{
+					"name": "Pirate",
+					"children": [{
+							"name": "The Black Pirate"
+						},
+						{
+							"name": "Treasure Island"
+						},
+						{
+							"name": "Pirates of Caribbean "
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Thriller",
+			"children": [{
+					"name": "Psychological",
+					"children": [{
+							"name": "Memento"
+						},
+						{
+							"name": "Rear Window"
+						},
+						{
+							"name": "Taxi Driver"
+						}
+					]
+				},
+				{
+					"name": "Science Fiction",
+					"children": [{
+							"name": "Alien"
+						},
+						{
+							"name": "Inception"
+						},
+						{
+							"name": "District 9"
+						}
+					]
+				},
+				{
+					"name": "Crime",
+					"children": [{
+							"name": "The Usual Suspects"
+						},
+						{
+							"name": "Fugitive"
+						},
+						{
+							"name": "Jagged Edge"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Documentary",
+			"children": [{
+					"name": "Nature",
+					"children": [{
+							"name": "Planet Earth"
+						},
+						{
+							"name": "Oceans"
+						},
+						{
+							"name": "Penguin Island"
+						}
+					]
+				},
+				{
+					"name": "Docudrama",
+					"children": [{
+							"name": "FirstMan"
+						},
+						{
+							"name": "Snowden"
+						},
+						{
+							"name": "Truth"
+						}
+					]
+				}
+			]
+		}
+	]
+}

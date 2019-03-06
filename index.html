@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+  <style is="custom-style">
+    /* Define a document-wide default—will not override a :host rule in icon-toggle-demo */
+    
+    :root {
+      --toggle-icon-outline: red;
+    }
+    /* Override the value specified in icon-toggle-demo */
+    
+    icon-toggle-demo {
+      --toggle-icon-pressed: blue;
+    }
+    /* This rule does not work! */
+    
+    body {
+      --toggle-icon-color: purple;
+    }
+  </style>
+  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+  <script>
+    /*
+      window.Polymer = window.Polymer || {};
+      window.Polymer.dom = 'shadow';
+      */
+  </script>
+  <link rel="import" href="tree-view-search.html">
+</head>
+
+<body>
+  <tree-view-search>
+  </tree-view-search>
+</body>
+
+</html>
